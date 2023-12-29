@@ -27,7 +27,7 @@
       <BaseSection>
         <div data-aos="fade-right" data-aos-delay="150" class="col-span-12 lg:col-span-6">
           <div class="w-full">
-            <img src='~/assets/img/globe-payment.png' class="w-full" alt="" />
+            <!-- <img src='~/assets/img/globe-payment.png' class="w-full" alt="" /> -->
           </div>
         </div>
         <div data-aos="fade-left" data-aos-delay="150" class="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8">
@@ -125,17 +125,5 @@ const openDialog = ()=>{
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.bg-partner {
-  background: url('../assets/img/partner/background.png');
-  background-size: cover;
-  background-position: center;
-}
-.bg-trading-tools {
-  background: url('../assets/img/bg-trading-tools.webp');
-  background-size: cover;
-  background-position: center;
-}
-.max-h-0 {
-  max-height: 0;
-}
+
 </style>

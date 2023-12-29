@@ -1,349 +1,182 @@
 <template>
-  <div class="w-full overflow-hidden">
+  <div class="w-full overflow-hidden bg-home pt-24 sm:pt-36">
     <Navbar color="#D6DA20" @openForm="openDialog()" />
     <!-- Hero section -->
     <section id="hero" class="w-full">
-      <baseSection>
-        <div class="sm:hidden col-span-12 lg:col-span-6">
-          <div class="w-full">
-            <img
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-once="true"
-              src='~/assets/img/h.png'
-              class=""
-              alt=""
-            />
-          </div>
-        </div>
+      <div class="w-full flex flex-col items-center justify-center">
 
-        <div class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
-          <span data-aos="fade-right" data-aos-once="true" class="text-base text-gradient font-semibold uppercase"
-            >Sign Up Today</span
-          >
+        <div class="w-full sm:w-3/4 lg:w-3/5 items-center justify-center mt-12 space-y-4 px-6 text-center">
+          
           <h1
             data-aos="fade-right"
             data-aos-once="true"
-            class="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
+            data-aos-delay="500"
+            class="text-5xl extraboldCabinet sm:text-7xl"
           >
-            True seamless <span class="text-header-gradient">finance</span> across borders
+            Tailored <span>Applications</span> for Dream Roles
           </h1>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="paragraph hidden sm:block">
-            Smart and secured mediums to effortlessly send and receive money for individuals and businesses.
+          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-sm cabinet text-gray-500 paragraph">
+            Say goodbye to generic applications! Our cutting-edge AI analyzes your uploaded resume and job description, crafting bespoke CVs and cover letters optimized for your dream job.
           </p>
           <div
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="700"
-            class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
+            class="flex flex-col items-center justify-center sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
           >
+            
             <baseButton
-            @click="visible = true"
-              class="max-w-full px-8 py-4 bg-gradient-to-r from-[#0cd3ff] to-[#D6DA20] border border-[#0cd3ff] text-white"
+              class="max-w-full px-6 py-4 my-9 lg:my-12 bg-black text-white flex items-center justify-center"
             >
-              Get Started
-            </baseButton>
-            <baseButton
-              class="max-w-full px-6 py-4 bg-inherit text-gradient border border-[#1D3160] flex items-center justify-center" @click="visible = true"
-            >
-              <span>Join Waitlist</span>
-              <ChevronDownIcon :size="20" class="mt-1 text-[#1D3160]" />
+              <span>Get started for free</span>
             </baseButton>
           </div>
         </div>
-        <div class="hidden sm:block col-span-12 lg:col-span-6">
-          <div class="w-full">
+        <div class="w-4/5">
             <img
               data-aos="fade-up"
               data-aos-once="true"
               data-aos-delay="500"
-              src='~/assets/img/h.png'
-              class=""
+              src='~/assets/img/dashboard.svg'
+              class="w-full mb-12 sm:mb-24"
+              alt=""
+            />
+        </div>
+      
+      </div>
+    </section>
+    
+
+    <!-- Whats Possible with Jobin -->
+    <section id="Talents" class="w-full bg-black">
+      <div class="w-full flex flex-col items-center justify-center px-4 lg:px-16 py-16 space-y-8">
+        <div data-aos="fade-left" class="w-full space-y-4">
+          <h1
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-delay="500"
+            class="text-xl text-white extraboldCabinet sm:text-3xl"
+          >
+          What’s possible with JobIn?
+          </h1>
+          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-sm cabinet text-gray-500 paragraph">
+            Craft Tailored CVs & Cover Letters, Analyze Your Resume's Impact.
+          </p>
+        </div>
+
+        <Features />
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <HowItWorks />
+
+
+    <!-- Get hired without borders -->
+    <section id="hero" class="w-full bg-white p-4 sm:p-12 space-y-8">
+      <div class="w-full flex flex-col items-center justify-center rounded-xl bg-[#fefbd1]">
+
+        <div class="w-full sm:w-3/4 lg:w-3/5 items-center justify-center py-36 space-y-4 px-6 text-center">
+          
+          <h1
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-delay="500"
+            class="text-5xl extraboldCabinet sm:text-7xl"
+          >
+            GET <span>HIRED</span> WITHOUT BORDERS
+          </h1>
+          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-sm cabinet text-gray-500 paragraph">
+            Our dream is for global digital talents to live and work anywhere seamlessly. That means working without borders: moving overseas, seamlessly, conveniently, and — eventually — as a digital Expat.
+          </p>
+          <div
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="700"
+            class="flex flex-col items-center justify-center sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
+          >
+            
+            <baseButton
+              class="max-w-full px-6 py-4 my-3 bg-black text-white flex items-center justify-center"
+            >
+              <span>Get started for free</span>
+            </baseButton>
+          </div>
+        </div>
+        
+      
+      </div>
+
+      <div class="w-full space-y-8 sm:space-y-0 space-x-0 sm:space-x-8 flex flex-col sm:flex-row items-center justify-center">
+
+        <!-- Know your chances with our resume analysis -->
+        <div class="w-full sm:w-1/2 bg-[#cbfeed] flex flex-col items-center justify-center rounded-2xl">
+          <div data-aos="fade-left" class="w-full mt-4 sm:mt-0 px-8 pt-10 flex flex-col items-start justify-start space-y-3 lg:space-y-6 mb-6 lg:mb-0">
+            <h1
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-delay="500"
+              class="text-2xl text-black font-bold extraboldCabinet lg:text-4xl"
+              >
+              Know Your Chances with Our Resume Analysis
+            </h1>
+            <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class=" text-xs lg:text-sm cabinet text-black paragraph">
+              Our powerful Resume Analyzer evaluates your resume, providing insights on its effectiveness and your likelihood of landing your dream job. Gain valuable feedback instantly
+            </p>
+            <span class="flex flex-row text-xs lg:text-sm space-y-4 items-center hover:text-gray-500 justify-center">
+              Analyze your resume 
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01"/></svg>
+            </span>
+          </div>
+          <div class="w-full flex flex-row items-end justify-end">
+            <img
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="500"
+              src='~/assets/img/resume.svg'
+              class="w-[60%]"
               alt=""
             />
           </div>
         </div>
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          src='~/assets/img/pattern/ellipse-1.png'
-          class="hidden sm:block absolute bottom-12 xl:bottom-16 left-4 xl:left-0 w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          src='~/assets/img/pattern/ellipse-2.png'
-          class="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          src='~/assets/img/pattern/ellipse-3.png'
-          class="hidden sm:block absolute bottom-56 right-24 w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          src='~/assets/img/pattern/star.png'
-          class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"
-        />
-      </baseSection>
-    </section>
 
-    <section class="w-full mb-24">
-      <baseSection>
-        <div data-aos="fade-left" class="col-span-12 mt-4 xl:mt-20 px-[5%]">
-          <userSteps/>
+        <!-- Know your chances with our resume analysis -->
+        <div class="w-full sm:w-1/2 bg-[#fdeac9] flex flex-col items-center justify-center rounded-2xl">
+          <div data-aos="fade-left" class="w-full mt-4 sm:mt-0 px-8 pt-10 flex flex-col items-start justify-start space-y-3 lg:space-y-6 mb-6 lg:mb-0">
+            <h1
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-delay="500"
+              class="text-2xl text-black font-bold extraboldCabinet lg:text-4xl"
+              >
+              Know Your Chances with Our Resume Analysis
+            </h1>
+            <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class=" text-xs lg:text-sm cabinet text-black paragraph">
+              Our powerful Resume Analyzer evaluates your resume, providing insights on its effectiveness and your likelihood of landing your dream job. Gain valuable feedback instantly
+            </p>
+            <span class="flex flex-row text-xs lg:text-sm space-y-4 items-center hover:text-gray-500 justify-center">
+              Explore salary calculator 
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01"/></svg>
+            </span>
+          </div>
+          <div class="w-full flex flex-row items-end justify-end">
+            <img
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="500"
+              src='~/assets/img/accounting.svg'
+              class="w-[70%] py-7 lg:py-12"
+              alt=""
+            />
+          </div>
         </div>
-      </baseSection>
+        
+      </div>
     </section>
 
     
-    <!--At your preferred price and amount -->
-    <section class="w-full my-12">
-      <baseSection>
-        <preferredImage data-aos="fade-right" class="mb-8" />
-        <div data-aos="fade-left" class="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4">
-          <h2 class="text-3xl sm:text-5xl font-semibold sm:pr-8 xl:pr-12">
-            Exchange Assets easily at your preferred price  <br class="hidden sm:block" />
-             and amount.
-          </h2>
-          <p class="paragraph">
-            Place exchange orders at your desired price and amount.
-          </p>
-          
-        </div>
-      </baseSection>
-    </section>
 
-
-    <!-- Various assets section -->
-    <section class="w-full my-12">
-      <baseSection>
-        <buyTradeImage class="sm:hidden mb-8" />
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4">
-          <h2 class="text-3xl sm:text-5xl font-semibold sm:pr-8 xl:pr-12">
-            Supporting various <br class="hidden sm:block" />
-             fiat and crypto assets.
-          </h2>
-          <p class="paragraph">
-            Work with diverse crypto-currencies and fiat currencies.
-          </p>
-          
-        </div>
-        <buyTradeImage data-aos="fade-left" class="hidden sm:block" />
-      </baseSection>
-    </section>
-
-    <!-- Automated instant exchange -->
-    <section class="w-full my-12">
-      <baseSection>
-        <p2pTradeImage data-aos="fade-right" class="mb-8" />
-        <div data-aos="fade-left" class="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4">
-          <h2 class="text-3xl sm:text-5xl font-semibold sm:pr-8 xl:pr-12">
-            Quick and Instant  <br class="hidden sm:block" />
-             Operation.
-          </h2>
-          <p class="paragraph">
-             Fast, Swift and Secured Transaction Execution.
-          </p>
-          
-        </div>
-      </baseSection>
-    </section>
-
-
-    <!-- Support for individuals and businesses -->
-    <section class="w-full my-12">
-      <baseSection>
-        <usersStoryImage data-aos="fade-left" class=" sm:hidden" />
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4">
-          <h2 class="text-3xl sm:text-5xl font-semibold sm:pr-8 xl:pr-12">
-            Support for <br class="hidden sm:block" />
-             both individuals and businesses.
-          </h2>
-          <p class="paragraph">
-            Work with diverse crypto-currencies and fiat currencies.
-          </p>
-          
-        </div>
-        <usersStoryImage data-aos="fade-left" class="hidden sm:block" />
-      </baseSection>
-    </section>
-
-    <!-- Credit card section
-    <section class="w-full my-36">
-      <baseSection data-aos="fade-down">
-        <div class="col-span-12 lg:col-span-7">
-          <div class="w-full">
-            <img src='~/assets/img/nefa-cc.webp' class="w-[95%]" alt="" />
-          </div>
-        </div>
-        <div class="col-span-12 lg:col-span-5 space-y-6 px-4 sm:px-6 mt-20">
-          <h2 class="text-4xl font-semibold">
-            Introducing the <span class="text-header-gradient">NEFA</span> Credit Card
-          </h2>
-          <p class="paragraph">Subject to cardholder and rewards terms which will be available at application.</p>
-          <ul class="space-y-4 sm:space-y-2">
-            <listItem title="Up to 3% back on purchases" />
-            <listItem title="Earn rewards in bitcoin or any crypto on NEFA" />
-            <listItem title="No annual fee" />
-          </ul>
-          <baseButton
-            class="w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-gradient border border-[#0c66ee] text-base"
-            >Join the waitlist</baseButton
-          >
-        </div>
-      </baseSection>
-    </section> -->
-
-    <!-- users Story section -->
-    <!-- <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 py-16 shadow rounded-2xl overflow-hidden">
-      <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
-        <tradingToolImage class="sm:hidden" />
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
-          <h2 class="text-5xl font-semibold">Users <span class="text-[#20DA97]">Story</span></h2>
-
-          <div class="border-2  flex items-center justify-center grid grid-cols-12 rounded-[30px]">
-            <div class="col-span-12 flex items-center justify-center sm:col-span-6">
-              <img src='~/assets/img/cryptoVendor.png' class="w-1/2" alt="" />
-            </div>
-            <div class="col-span-12 space-y-4 sm:col-span-6 px-6 sm:pr-8 -mt-6 py-6 sm:mt-1">
-              <p class="paragraph text-center text-xs">
-                We provide premium access to crypto trading for both individuals and institutions through high liquidity,
-                reliable order execution and constant uptime.
-              </p>
-            </div>
-            
-          </div>
-
-          <div class="border-2 sm:bg-[#1D3160] flex items-center justify-center grid grid-cols-12 rounded-[30px]">
-            <div class="col-span-12 flex items-center justify-center sm:col-span-6">
-              <img src='~/assets/img/forexVendor.png' class="w-1/2" alt="" />
-            </div>
-            <div class="col-span-12 space-y-4 sm:col-span-6 px-6 sm:pr-8 -mt-6 py-6 sm:mt-1">
-              <p class="paragraph sm:text-white text-center text-xs">
-                We provide premium access to crypto trading for both individuals and institutions through high liquidity,
-                reliable order execution and constant uptime.
-              </p>
-            </div>
-            
-          </div>
-
-          <div class="border-2 flex items-center justify-center grid grid-cols-12 rounded-[30px]">
-            <div class="col-span-12 flex items-center justify-center sm:col-span-6">
-              <img src='~/assets/img/mini-Importer.png' class="w-1/2" alt="" />
-            </div>
-            <div class="col-span-12 space-y-4 sm:col-span-6 px-6 sm:pr-8 -mt-6 py-6 sm:mt-1">
-              <p class="paragraph text-center text-xs">
-                We provide premium access to crypto trading for both individuals and institutions through high liquidity,
-                reliable order execution and constant uptime.
-              </p>
-            </div>
-            
-          </div>
-
-          <div class="border-2 sm:bg-[#1D3160] flex items-center justify-center grid grid-cols-12 rounded-[30px]">
-            <div class="col-span-12 flex items-center justify-center sm:col-span-6">
-              <img src='~/assets/img/nomad.png' class="w-1/2" alt="" />
-            </div>
-            <div class="col-span-12 space-y-4 sm:col-span-6 px-6 sm:pr-8 -mt-6 py-6 sm:mt-1">
-              <p class="paragraph sm:text-white text-center text-xs">
-                We provide premium access to crypto trading for both individuals and institutions through high liquidity,
-                reliable order execution and constant uptime.
-              </p>
-            </div>
-            
-          </div>
-
-          
-        </div>
-
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
-
-          <div class="border-2 sm:bg-[#1D3160] flex items-center justify-center grid grid-cols-12 rounded-[30px]">
-            <div class="col-span-12 flex items-center justify-center sm:col-span-6">
-              <img src='~/assets/img/forexVendor.png' class="w-1/2" alt="" />
-            </div>
-            <div class="col-span-12 space-y-4 sm:col-span-6 px-6 sm:pr-8 -mt-6 py-6 sm:mt-1">
-              <p class="paragraph sm:text-white text-center text-xs">
-                We provide premium access to crypto trading for both individuals and institutions through high liquidity,
-                reliable order execution and constant uptime.
-              </p>
-            </div>
-            
-          </div>
-
-          <div class="border-2  flex items-center justify-center grid grid-cols-12 rounded-[30px]">
-            <div class="col-span-12 flex items-center justify-center sm:col-span-6">
-              <img src='~/assets/img/cryptoVendor.png' class="w-1/2" alt="" />
-            </div>
-            <div class="col-span-12 space-y-4 sm:col-span-6 px-6 sm:pr-8 -mt-6 py-6 sm:mt-1">
-              <p class="paragraph text-center text-xs">
-                We provide premium access to crypto trading for both individuals and institutions through high liquidity,
-                reliable order execution and constant uptime.
-              </p>
-            </div>
-            
-          </div>
-
-        </div>
-
-
-      </div>
-    </section> -->
-
-    <!-- Getting started section -->
-    <!-- <section class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-10 shadow sm:rounded-2xl overflow-hidden">
-      <div class="w-full py-16 flex flex-col items-center">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">
-          Get started in just a few minutes
-        </h2>
-        <div
-          data-aos="fade-up"
-          class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
-        >
-        <Step/>
-          <img
-            src='~/assets/img/getting-started/arrow.png'
-            class="hidden lg:inline-block absolute top-32 left-64 xl:left-[22rem] w-24 xl:w-[9.5rem]"
-            alt=""
-          />
-          <img
-            src='~/assets/img/getting-started/arrow.png'
-            class="hidden lg:inline-block absolute top-32 right-64 xl:right-[22rem] w-24 xl:w-[9.5rem]"
-            alt=""
-          />
-        </div>
-      </div>
-    </section> -->
-
-    <!-- FAQ section -->
-    <section class="w-full my-12">
-      <BaseSection>
-        <div data-aos="fade-right" data-aos-delay="150" class="col-span-12 lg:col-span-6">
-          <div class="w-full">
-            <img src='~/assets/img/faq.webp' class="w-full" alt="" />
-          </div>
-        </div>
-        <div data-aos="fade-left" data-aos-delay="150" class="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8">
-          <span class="text-base text-gradient font-semibold uppercase mb-4 sm:mb-2">Support</span>
-          <h2 class="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6">Frequently asked questions</h2>
-
-          <ul class="shadow-box">
-            <accordion v-for="(accordion, index) in accordions" :key="index" :accordion="accordion" />
-          </ul>
-          <baseButton
-              class="max-w-full px-6 py-4 bg-inherit text-gradient border border-[#1D3160] flex items-center justify-center mt-4" @click="$router.push('/faqs')"
-            >
-              <span>Read More</span>
-        </baseButton>
-        </div>
-        
-      </baseSection>
-    </section>
-
-    <div class="w-full my-10 flex justify-center">
+    <!-- <div class="w-full my-10 flex justify-center">
       <a
         v-smooth-scroll
         data-aos="flip-down"
@@ -354,7 +187,7 @@
         <span>Back to top</span>
         <ArrowUpIcon :size="20" />
       </a>
-    </div>
+    </div> -->
     <waitlistForm :visible="visible" @cancel="visible = false"/>
 
     <Footer />
@@ -393,23 +226,29 @@ const openDialog = ()=>{
 </script>
 
 <style scoped>
+ 
+ h1,.cabinet {
+  font-family: 'cabinetGrotesk', sans-serif;
+ }
+
+ .extraboldCabinet{
+  font-family: 'cabinetGroteskBold', sans-serif;
+ }
+
+ .blackCabinet{
+  font-family: 'cabinetGroteskBlack', sans-serif;
+ }
+
 .text-header-gradient {
   background: rgb(57, 132, 244);
   background: linear-gradient(169.4deg, #20DA97 -6.01%, #0cd3ff 36.87%, #20DA97 78.04%, #20DA97 103.77%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.bg-partner {
-  background: url('../assets/img/partner/background.png');
-  background-size: cover;
+.bg-home {
+  background: url('../assets/img/pattern/home.svg');
+  background-size: contain;
   background-position: center;
 }
-.bg-trading-tools {
-  background: url('../assets/img/bg-trading-tools.webp');
-  background-size: cover;
-  background-position: center;
-}
-.max-h-0 {
-  max-height: 0;
-}
+
 </style>

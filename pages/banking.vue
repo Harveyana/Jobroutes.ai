@@ -6,14 +6,14 @@
       <baseSection>
         <div class="sm:hidden col-span-12 lg:col-span-6">
           <div class="w-full">
-            <img
+            <!-- <img
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-once="true"
               src='~/assets/img/globe-Payment.png'
               class=""
               alt=""
-            />
+            /> -->
           </div>
         </div>
 
@@ -54,40 +54,17 @@
         </div>
         <div class="hidden sm:block col-span-12 lg:col-span-6">
           <div class="w-full">
-            <img
+            <!-- <img
               data-aos="fade-up"
               data-aos-once="true"
               data-aos-delay="500"
               src='~/assets/img/globe-Payment.png'
               class=""
               alt=""
-            />
+            /> -->
           </div>
         </div>
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          src='~/assets/img/pattern/ellipse-1.png'
-          class="hidden sm:block absolute bottom-12 xl:bottom-16 left-4 xl:left-0 w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          src='~/assets/img/pattern/ellipse-2.png'
-          class="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          src='~/assets/img/pattern/ellipse-3.png'
-          class="hidden sm:block absolute bottom-56 right-24 w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          src='~/assets/img/pattern/star.png'
-          class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"
-        />
+        
       </baseSection>
     </section>
 
@@ -124,14 +101,14 @@
           </p>
           
         </div>
-        <sendRecieve-Image data-aos="fade-left" class="hidden sm:block" />
+        <!-- <sendRecieve-Image data-aos="fade-left" class="hidden sm:block" /> -->
       </baseSection>
     </section>
 
     <!-- Multi-currency  support section-->
     <section class="w-full my-12">
       <baseSection>
-        <buyTradeImage data-aos="fade-right" class="mb-8" />
+        <!-- <buyTradeImage data-aos="fade-right" class="mb-8" /> -->
         <div data-aos="fade-left" class="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4">
           <h2 class="text-3xl sm:text-5xl font-semibold sm:pr-8 xl:pr-12">
             Multi-currency Support  <br class="hidden sm:block" />
@@ -182,17 +159,5 @@ const openDialog = ()=>{
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.bg-partner {
-  background: url('../assets/img/partner/background.png');
-  background-size: cover;
-  background-position: center;
-}
-.bg-trading-tools {
-  background: url('../assets/img/bg-trading-tools.webp');
-  background-size: cover;
-  background-position: center;
-}
-.max-h-0 {
-  max-height: 0;
-}
+
 </style>
