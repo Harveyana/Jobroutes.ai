@@ -1,5 +1,5 @@
 <template>
-    <footer class="max-w-screen-xl px-8 sm:px-20 py-10 mx-auto bg-black rounded-tl-[55px] rounded-tr-[55px]">
+    <footer class="max-w-screen-xl px-8 sm:px-20 py-10 mx-auto bg-black rounded-tl-[55px] rounded-tr-[55px] mt-20">
       <div class="w-full flex flex-col sm:flex-row items-start justify-end space-y-8 sm:space-y-0 space-x-0 sm:space-x-24">
         <!-- Logo -->
         <div class="flex flex-row w-12 mr-auto">

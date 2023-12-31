@@ -1,5 +1,5 @@
 <template>
-    <div :class="`w-full flex flex-col items-center justify-center bg-[${props.bg}] rounded-2xl px-3`">
+    <div :class="`w-full flex flex-col items-center justify-center ${props.bg} rounded-2xl px-3`">
             <div @click="openFaq = !openFaq" class="w-full cursor-pointer flex flex-row items-center justify-between py-4 ">
               <h1 class=" text-sm sm:text-xl extraboldCabinet">
                 {{$props.question}}
@@ -10,7 +10,7 @@
               <svg v-else xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 15 15"><g transform="translate(0 15) scale(1 -1)"><path fill="black" fill-rule="evenodd" d="M3.135 6.158a.5.5 0 0 1 .707-.023L7.5 9.565l3.658-3.43a.5.5 0 0 1 .684.73l-4 3.75a.5.5 0 0 1-.684 0l-4-3.75a.5.5 0 0 1-.023-.707" clip-rule="evenodd"/></g></svg>
             </div>
             <div data-aos="fade-down" data-aos-once="true" v-if="openFaq" class="w-full py-4">
-              <p class="text-xs text-left cabinet text-black paragraph">
+              <p class="text-xs sm:text-sm text-left cabinet text-black paragraph">
                   {{$props.answer}}
               </p>
             </div>
@@ -51,6 +51,22 @@
     background: url('../assets/img/pattern/home.svg');
     background-size: contain;
     background-position: center;
+  }
+
+  .bg1{
+    background: #EAFFE5;
+  }
+
+  .bg2{
+    background: #E1FDF4;
+  }
+
+  .bg3{
+    background: #FDEBFF;
+  }
+
+  .bg4{
+    background: #FFEBEC;
   }
 
   </style>

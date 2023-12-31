@@ -14,22 +14,25 @@
             </button>
           </div>
         </div>
-        <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-6 space-y-4 lg:space-y-0 flex flex-col lg:flex-row items-center justify-center">
+        <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-0 sm:space-x-6 space-y-4 lg:space-y-0 flex flex-col lg:flex-row items-center justify-center">
           <ul
             :class="[open ? 'flex' : 'hidden lg:flex']"
-            class="w-full h-auto flex flex-col lg:flex-row items-center justify-center pb-4 lg:pb-0 lg:justify-end lg:flex-row duration-300 space-x-6"
+            class="w-full h-auto flex flex-col lg:flex-row items-center justify-center pb-4 lg:pb-0 lg:justify-end duration-300 space-x-0 sm:space-x-6"
           >
-            <NavLink name="For Talents" url="#Talents" />
+            <!-- <NavLink name="For Talents" url="#Talents" /> -->
             <NavLink name="Pricing" url="/pricing" />
-            <NavLink name="Resources" url="/resources" />
+            <NavLink name="Resources" url="#" />
             <!-- <NavLink name="Contact" url="/faqs" /> -->
           </ul>
-          <BaseButton class="bg-[#e6e7e7] cabinet whitespace-nowrap py-2 px-6 lg:px-3 font-black text-black border border-[#1D3160]">
+          <BaseButton @click="$emit('openForm')" class="bg-[#e6e7e7] cabinet whitespace-nowrap py-2 px-6 lg:px-3 font-black text-black border border-[#1D3160]">
+            Join waitlist
+          </BaseButton>
+          <!-- <BaseButton class="bg-[#e6e7e7] cabinet whitespace-nowrap py-2 px-6 lg:px-3 font-black text-black border border-[#1D3160]">
             Login
           </BaseButton>
           <BaseButton class="bg-[#e6e7e7] cabinet whitespace-nowrap py-2 px-6 lg:px-3 font-black text-black border border-[#1D3160]">
             Sign Up
-          </BaseButton>
+          </BaseButton> -->
         </div>
       </div>
     </nav>

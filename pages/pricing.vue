@@ -48,19 +48,6 @@
       </div>
     </section>
 
-    <div class="w-full my-10 flex justify-center">
-      <a
-        v-smooth-scroll
-        data-aos="flip-down"
-        data-aos-delay="150"
-        href="#navbar"
-        class="px-6 py-3 flex items-center space-x-2 bg-[#FAFAFA] hover:bg-gray-100 hover:shadow-md border border-[#DDDDDD] rounded-md text-gray-700"
-      >
-        <span>Back to top</span>
-        <ArrowUpIcon :size="20" />
-      </a>
-    </div>
-
     <Footer />
 
   </div>
@@ -78,22 +65,22 @@ const openDialog = ()=>{
         {
           question: 'What is JobRoutes?',
           answer: 'Supports better engagement dmsjfxhvcxcvdksjbxzcxn',
-          bg:'#EAFFE5',
+          bg:'bg1',
         },
         {
           question: 'How does JobRoutes work?',
           answer: 'Supports better engagement dmsjfxhvcxcvdksjbxzcxn',
-          bg:'#E1FDF4',
+          bg:'bg2',
         },
         {
           question: 'Is JobRoutes suitable for all industries and job levels?',
           answer: 'Supports better engagement dmsjfxhvcxcvdksjbxzcxn',
-          bg:'#FDEBFF',
+          bg:'bg3',
         },
         {
           question: 'Can JobRoutes personalize resumes and cover letters?',
           answer: 'Supports better engagement dmsjfxhvcxcvdksjbxzcxn',
-          bg:'#FFEBEC',
+          bg:'bg4',
         },
       ]
 </script>
