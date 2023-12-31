@@ -125,12 +125,12 @@
 
   </script>
   <style scoped>
-  .formbackground{
+  /* .formbackground{
     background: url('~/assets/img/logo/vyreLogo.png'),#1D3160;
     background-size: auto;
     background-position-x: -390%;
     background-position-y: 590%;
     background-repeat: no-repeat;
     
-  }
+  } */
  </style>

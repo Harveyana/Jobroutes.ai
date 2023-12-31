@@ -20,8 +20,8 @@
             class="w-full h-auto flex flex-col lg:flex-row items-center justify-center pb-4 lg:pb-0 lg:justify-end lg:flex-row duration-300 space-x-6"
           >
             <NavLink name="For Talents" url="#Talents" />
-            <NavLink name="Pricing" url="/faqs" />
-            <NavLink name="Resources" url="/faqs" />
+            <NavLink name="Pricing" url="/pricing" />
+            <NavLink name="Resources" url="/resources" />
             <!-- <NavLink name="Contact" url="/faqs" /> -->
           </ul>
           <BaseButton class="bg-[#e6e7e7] cabinet whitespace-nowrap py-2 px-6 lg:px-3 font-black text-black border border-[#1D3160]">
