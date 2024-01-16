@@ -69,4 +69,11 @@
     background: #FFEBEC;
   }
 
+  .bg5{
+    background: #fffef7;
+  }
+  .bg6{
+    background: #dceaff;
+  }
+
   </style>

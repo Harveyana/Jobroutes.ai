@@ -7,17 +7,18 @@
               <span>Optimized Resumes & Cover Letters</span>
           </baseButton>
           <baseButton
-             @click="openFeature = 2"
-             :class="openFeature == 2 ? 'max-w-full px-6 py-3 my-3 lg:my-8 bg-[#e6e7e7] text-black flex items-center justify-center':'max-w-full px-6 py-3 my-3 lg:my-8 bg-[#171c21] border-[#e6e7e7] border text-[#e6e7e7] flex items-center justify-center'"
-            >
-              <span>Resume Analyzer</span>
-          </baseButton>
-          <baseButton
              @click="openFeature = 3"
              :class="openFeature == 3 ? 'max-w-full px-6 py-3 my-3 lg:my-8 bg-[#e6e7e7] text-black flex items-center justify-center':'max-w-full px-6 py-3 my-3 lg:my-8 bg-[#171c21] border-[#e6e7e7] border text-[#e6e7e7] flex items-center justify-center'"
             >
               <span>Career Growth Resources</span>
           </baseButton>
+          <baseButton
+             @click="openFeature = 2"
+             :class="openFeature == 2 ? 'max-w-full px-6 py-3 my-3 lg:my-8 bg-[#e6e7e7] text-black flex items-center justify-center':'max-w-full px-6 py-3 my-3 lg:my-8 bg-[#171c21] border-[#e6e7e7] border text-[#e6e7e7] flex items-center justify-center'"
+            >
+              <span>Resume Analyzer</span>
+          </baseButton>
+          
         </div>
 
         <!-- FEATURE 1 -->

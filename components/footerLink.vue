@@ -1,7 +1,7 @@
 <template>
     <li class="w-full">
       <NuxtLink
-        class=" cabinet whitespace-nowrap text-xs sm:text-sm py-2 font-black bg-transparent rounded-lg text-white hover:text-gray-900 focus:outline-none focus:shadow-outline"
+        class=" cabinet whitespace-nowrap text-xs sm:text-sm py-2 font-black bg-transparent rounded-lg text-white hover:text-gray-500 focus:outline-none focus:shadow-outline"
         :to="url"
       >
         {{ name }}

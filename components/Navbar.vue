@@ -1,5 +1,5 @@
 <template>
-    <nav id="navbar" class="fixed top-0 left-0 right-0 backdrop-blur-lg z-10 w-full text-neutral-800">
+    <nav id="navbar" class="fixed top-0 left-0 right-0  backdrop-blur-lg z-10 w-full text-neutral-800">
       <div class="flex flex-col max-w-screen-xl px-4 sm:px-16 mx-auto lg:items-center lg:justify-between lg:flex-row">
         <div class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
           <div class="w-full flex flex-row items-center justify-between py-6">
@@ -21,7 +21,7 @@
           >
             <!-- <NavLink name="For Talents" url="#Talents" /> -->
             <NavLink name="Pricing" url="/pricing" />
-            <NavLink name="Resources" url="#" />
+            <NavLink name="Resources" url="/resources" />
             <!-- <NavLink name="Contact" url="/faqs" /> -->
           </ul>
           <BaseButton @click="$emit('openForm')" class="bg-[#e6e7e7] cabinet whitespace-nowrap py-2 px-6 lg:px-3 font-black text-black border border-[#1D3160]">

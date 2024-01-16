@@ -3,10 +3,7 @@ export default defineNuxtConfig({
   // devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
 
-  modules: [
-    '@nuxtjs/tailwindcss',
-    'nuxt-primevue'
-  ],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-primevue', '@nuxt/image'],
   ssr: false,
   app: {
     head: {
@@ -16,7 +13,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { hid: 'Tailored Applications for Dream Roles', name: 'crafting bespoke CVs and cover letters optimized for your dream job', content: 'No more generic applications! Our cutting-edge AI analyzes your uploaded resume and job description, crafting bespoke CVs and cover letters optimized for your dream job' }
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/jobroute.png' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/jobroute.svg' }],
     },
   },
   primevue: {

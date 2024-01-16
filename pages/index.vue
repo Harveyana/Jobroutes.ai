@@ -1,177 +1,182 @@
 <template>
   <div class="w-full overflow-hidden bg-home pt-24 sm:pt-36">
-    <Navbar color="#D6DA20" @openForm="openDialog()" />
+   <Navbar color="#D6DA20" @openForm="openDialog()" />
     <!-- Hero section -->
     <section id="hero" class="w-full">
-      <div class="w-full flex flex-col items-center justify-center">
+       
+      <BaseSection>
 
-        <div class="w-full sm:w-3/4 lg:w-3/5 items-center justify-center mt-12 space-y-4 px-6 text-center">
-          
-          <h1
-            data-aos="fade-right"
-            data-aos-once="true"
-            data-aos-delay="500"
-            class="text-5xl extraboldCabinet sm:text-7xl"
-          >
-            Tailored <span>Applications</span> for Dream Roles
-          </h1>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-sm cabinet text-gray-500 paragraph">
-            Say goodbye to generic applications! Our cutting-edge AI analyzes your uploaded resume and job description, crafting bespoke CVs and cover letters optimized for your dream job.
-          </p>
-          <div
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-delay="700"
-            class="flex flex-col items-center justify-center sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
-          >
-            
-            <baseButton
-              class="max-w-full px-6 py-4 my-9 lg:my-12 bg-black text-white flex items-center justify-center"
-            >
-              <span>Get started for free</span>
-            </baseButton>
-          </div>
-        </div>
-        <div class="w-4/5">
-            <img
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-delay="500"
-              src='~/assets/img/dashboard.svg'
-              class="w-full mb-12 sm:mb-24"
-              alt=""
-            />
-        </div>
+        <div class="col-span-12 flex flex-col items-center justify-center">
+
+            <div class=" w-full sm:w-3/4 flex flex-col items-center justify-center mt-6 space-y-4 px-4 text-center">
+              <!-- Desktop -->
+              <h1
+                data-aos="fade-right"
+                data-aos-once="true"
+                data-aos-delay="500"
+                class="hidden lg:flex text-5xl extraboldCabinet sm:text-7xl"
+              >
+              Find Dream Roles, Access Global Opportunities.
+              </h1>
+              <!-- Mobile -->
+              <h1
+                data-aos="fade-right"
+                data-aos-once="true"
+                data-aos-delay="500"
+                class=" lg:hidden text-3xl extraboldCabinet sm:text-7xl"
+              >
+                Tailored <span>Applications</span> for Dream Roles
+              </h1>
+              <!-- desktop -->
+              <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="hidden lg:flex text-lg w-[60%] cabinet text-gray-500 paragraph">
+                Craft tailored applications for global dream roles with seamless access to limitless career opportunities.
+              </p>
+              <!-- Mobile -->
+              <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="lg:hidden text-sm w-[90%] cabinet text-gray-500 paragraph">
+                Say goodbye to generic applications! Our cutting-edge AI analyzes your uploaded resume and job description, crafting bespoke CVs and cover letters optimized for your dream job.
+              </p>
+
+              <div
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-delay="700"
+                class="flex flex-col items-center justify-center sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
+              >
+                
+                <baseButton
+                @click="openDialog()"
+                  class="max-w-full px-6 py-4 my-9 lg:my-12 bg-black text-white flex items-center justify-center"
+                >
+                  <span>Get started for free</span>
+                </baseButton>
+              </div>
+            </div>
+            <div class="w-4/5">
+                <img
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos-delay="500"
+                  src='~/assets/img/dashboard.svg'
+                  class="hidden lg:flex w-full mb-12 sm:mb-24"
+                  alt=""
+                />
+                <img
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos-delay="500"
+                  src='~/assets/img/mobiledash.svg'
+                  class="lg:hidden w-full h-full mb-12 sm:mb-24"
+                  alt=""
+                />
+            </div>
       
       </div>
+      </BaseSection>
+      
     </section>
     
 
     <!-- Whats Possible with Jobin -->
-    <section id="Talents" class="w-full bg-black">
-      <div class="w-full flex flex-col items-center justify-center px-4 lg:px-16 py-16 space-y-8">
-        <div data-aos="fade-left" class="w-full space-y-4">
-          <h1
-            data-aos="fade-right"
-            data-aos-once="true"
-            data-aos-delay="500"
-            class="text-xl text-white extraboldCabinet sm:text-3xl"
-          >
-          What’s possible with JobIn?
-          </h1>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-sm cabinet text-gray-500 paragraph">
-            Craft Tailored CVs & Cover Letters, Analyze Your Resume's Impact.
-          </p>
-        </div>
+    <section id="Talents" class="w-full">
+      <BaseSection>
+        <div class="col-span-12 bg-black flex flex-col items-center justify-center px-4 lg:px-16 py-16 space-y-8">
+          <div data-aos="fade-left" class="w-full space-y-4">
+            <h1
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-delay="500"
+              class="text-xl text-white extraboldCabinet sm:text-3xl"
+            >
+            What’s possible with JobRoutes?
+            </h1>
+            <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-sm cabinet text-gray-500 paragraph">
+              Craft tailored Resumes and Cover Letters to land your next job offer abroad.
+            </p>
+          </div>
 
-        <Features />
-      </div>
+          <Features />
+
+        </div>
+      </BaseSection>
+      
     </section>
 
     <!-- How It Works -->
-    <HowItWorks />
+    <section class="w-full ">
+      <BaseSection>
+        <HowItWorks />
+      </BaseSection>
+    </section>
+    
 
 
     <!-- Get hired without borders -->
-    <section id="hero" class="w-full bg-white p-4 sm:p-12 space-y-8">
-      <div class="w-full flex flex-col items-center justify-center rounded-xl bg-[#fefbd1]">
+    <section id="hero" class="w-full">
+      <BaseSection class="bg-white">
+        <div class="col-span-12 bg-[#fefbd1] m-4 sm:m-10 flex flex-col items-center justify-center rounded-xl">
 
-        <div class="w-full sm:w-3/4 lg:w-3/5 items-center justify-center py-36 space-y-4 px-6 text-center">
-          
-          <h1
-            data-aos="fade-right"
-            data-aos-once="true"
-            data-aos-delay="500"
-            class="text-5xl extraboldCabinet sm:text-7xl"
-          >
-            GET <span>HIRED</span> WITHOUT BORDERS
-          </h1>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-sm cabinet text-gray-500 paragraph">
-            Our dream is for global digital talents to live and work anywhere seamlessly. That means working without borders: moving overseas, seamlessly, conveniently, and — eventually — as a digital Expat.
-          </p>
-          <div
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-delay="700"
-            class="flex flex-col items-center justify-center sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
-          >
+          <div class="w-full sm:w-3/4 lg:w-3/5 items-center justify-center py-36 space-y-4 px-6 text-center">
             
-            <baseButton
-              class="max-w-full px-6 py-4 my-3 bg-black text-white flex items-center justify-center"
+            <h1
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-delay="500"
+              class="text-5xl extraboldCabinet sm:text-7xl"
             >
-              <span>Get started for free</span>
-            </baseButton>
+              GET <span>HIRED</span> WITHOUT BORDERS
+            </h1>
+            <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-sm cabinet text-gray-500 paragraph">
+              Our dream is for global digital talents to live and work anywhere seamlessly. That means working without borders: moving overseas, seamlessly, conveniently, and — eventually — as a digital Expat.
+            </p>
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="700"
+              class="flex flex-col items-center justify-center sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
+            >
+              
+              <baseButton
+              @click="openDialog()"
+                class="max-w-full px-6 py-4 my-3 bg-black text-white flex items-center justify-center"
+              >
+                <span>Get started for free</span>
+              </baseButton>
+            </div>
           </div>
-        </div>
+          
         
+        </div>
+
+
+      </BaseSection>
       
-      </div>
 
-      <div class="w-full space-y-8 sm:space-y-0 space-x-0 sm:space-x-8 flex flex-col sm:flex-row items-center justify-center">
+      
+    </section>
 
-        <!-- Know your chances with our resume analysis -->
-        <div class="w-full sm:w-1/2 bg-[#cbfeed] flex flex-col items-center justify-center rounded-2xl">
-          <div data-aos="fade-left" class="w-full mt-4 sm:mt-0 px-8 pt-10 flex flex-col items-start justify-start space-y-3 lg:space-y-6 mb-6 lg:mb-0">
+    
+    <!-- FAQS -->
+    <section class="w-full">
+      <BaseSection class="bg-white">
+        <div class="col-span-12 items-center justify-center space-y-6 px-4 sm:px-16 text-center pt-10 pb-20">
+          
             <h1
               data-aos="fade-right"
               data-aos-once="true"
               data-aos-delay="500"
-              class="text-2xl text-black font-bold extraboldCabinet lg:text-4xl"
-              >
-              Know Your Chances with Our Resume Analysis
+              class="text-2xl extraboldCabinet sm:text-4xl"
+            >
+              Frequently Asked Questions
             </h1>
-            <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class=" text-xs lg:text-sm cabinet text-black paragraph">
-              Our powerful Resume Analyzer evaluates your resume, providing insights on its effectiveness and your likelihood of landing your dream job. Gain valuable feedback instantly
-            </p>
-            <span class="flex flex-row text-xs lg:text-sm space-y-4 items-center hover:text-gray-500 justify-center">
-              Analyze your resume 
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01"/></svg>
-            </span>
-          </div>
-          <div class="w-full flex flex-row items-end justify-end">
-            <img
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-delay="500"
-              src='~/assets/img/resume.svg'
-              class="w-[60%]"
-              alt=""
-            />
-          </div>
-        </div>
 
-        <!-- Know your chances with our resume analysis -->
-        <div class="w-full sm:w-1/2 bg-[#fdeac9] flex flex-col items-center justify-center rounded-2xl">
-          <div data-aos="fade-left" class="w-full mt-4 sm:mt-0 px-8 pt-10 flex flex-col items-start justify-start space-y-3 lg:space-y-6 mb-6 lg:mb-0">
-            <h1
-              data-aos="fade-right"
-              data-aos-once="true"
-              data-aos-delay="500"
-              class="text-2xl text-black font-bold extraboldCabinet lg:text-4xl"
-              >
-              Know Your Chances with Our Resume Analysis
-            </h1>
-            <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class=" text-xs lg:text-sm cabinet text-black paragraph">
-              Our powerful Resume Analyzer evaluates your resume, providing insights on its effectiveness and your likelihood of landing your dream job. Gain valuable feedback instantly
-            </p>
-            <span class="flex flex-row text-xs lg:text-sm space-y-4 items-center hover:text-gray-500 justify-center">
-              Explore salary calculator 
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01"/></svg>
-            </span>
-          </div>
-          <div class="w-full flex flex-row items-end justify-end">
-            <img
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-delay="500"
-              src='~/assets/img/accounting.svg'
-              class="w-[70%] py-7 lg:py-12"
-              alt=""
-            />
-          </div>
+            <div class="w-full flex flex-col items-center justify-center" v-for="faq in faqs" :key="faq.question">
+              <Faq :question="faq.question" :answer="faq.answer" :bg="faq.bg" />
+            </div>
+            
+
         </div>
-        
-      </div>
+      </BaseSection>
+
     </section>
 
     
@@ -201,26 +206,36 @@ const openDialog = ()=>{
   visible.value = true
 }
       
-    const accordions = [
+      const faqs = [
         {
-          title: 'What is Vyre Africa?',
-          description:
-            "Vyre Africa is a platform that offers global secured multi-currency accounts for individuals and businesses across borders to instantly send, receive and swap fiats and crypto currencies seamlessly.",
+          question: 'What is JobRoutes?',
+          answer: 'JobRoutes is an AI-powered platform designed to assist job seekers in crafting tailored resumes and cover letters for various job applications. It streamlines the process by analyzing job descriptions and generating customized application materials.',
+          bg:'bg1',
         },
         {
-          title: 'Why Vyre?',
-          description:
-            "We provide cross border banking,global remittance and instant assets exchange supporting major fiats and crypto currencies",
+          question: 'How does JobRoutes work?',
+          answer: 'JobRoutes utilizes advanced AI algorithms to scan and analyze job postings. By understanding key requirements and skills sought by employers, it assists in generating resumes and cover letters that match the job criteria.',
+          bg:'bg3',
         },
         {
-          title: 'How can I benefit from Vyre Africa?',
-          description:
-            "Vyre Africa offers the convenience of global secured multi-currency accounts, allowing individuals and businesses to conduct instant transactions, receive money globally, and swap between fiat and cryptocurrencies effortlessly. Additionally, Vyre Africa issues IBANs for fiat currency accounts, enhancing the versatility of your account",
+          question: 'Is JobRoutes suitable for all industries and job levels?',
+          answer: 'Yes, JobRoutes caters to diverse industries and job levels. It adapts to different roles, from entry-level positions to executive roles, ensuring the generated materials align with specific job requirements.',
+          bg:'bg5',
         },
         {
-          title: 'What currencies does Vyre Africa support?',
-          description:
-            "Vyre Africa supports multiple currencies, providing users with the flexibility to transact in various fiat and cryptocurrencies. Each fiat currency account comes with its own IBAN.",
+          question: 'Can JobRoutes personalize resumes and cover letters?',
+          answer: "Absolutely! JobRoutes allows for customization by incorporating user-provided information, such as work experiences, skills, and achievements. It tailors content to highlight an individual's unique qualifications",
+          bg:'bg2',
+        },
+        {
+          question: 'How accurate are the resumes and cover letters generated by JobRoutes?',
+          answer: "JobRoutes emphasizes accuracy by aligning content with the job description. While it provides a solid foundation, users can further refine and personalize the generated materials to ensure relevance and precision.",
+          bg:'bg6',
+        },
+        {
+          question: 'How can I get started with JobRoutes?',
+          answer: "Signing up for JobRoutes is simple! Visit our platform, create an account, and begin generating tailored resumes and cover letters for your job applications instantly.",
+          bg:'bg4',
         },
       ]
 </script>

@@ -1,7 +1,7 @@
 <template>
     <div class="w-full p-5 flex flex-col sm:flex-row space-x-0 space-y-4 sm:space-y-0 sm:space-x-4 items-center sm:items-start justify-center">
             <!-- Free Plan -->
-            <div class="w-full sm:w-[23%] p-5 sm:p-3 bg-white space-y-4 flex flex-col items-start justify-start rounded-2xl">
+            <div class="w-full sm:w-[23%] h-fit space-y-4 lg:space-y-0 lg:h-full p-5 sm:p-3 bg-white flex flex-col items-start justify-between rounded-2xl">
               <img
                 
                 src='~/assets/img/tag1.svg'
@@ -21,16 +21,17 @@
 
               <h1 class="text-lg extraboldCabinet"
                 >
-                  5 <span class="text-sm cabinet text-gray-500 paragraph mx-1">resumes /cover letters</span>
+                  5 <span class="text-sm cabinet text-gray-500 paragraph mx-1">resumes /cover letters daily</span>
               </h1>
 
               <h1 class="text-xl extraboldCabinet "
                 >
-                Free <span class="text-sm  cabinet text-gray-500 paragraph">/ 14 days</span>
+                Free <span class="text-sm  cabinet text-gray-500 paragraph">/ 7 days</span>
               </h1>
 
               <baseButton
-               class="border-2 hover:bg-black hover:text-white mt-3 border-black w-full px-6 py-3 my-9 lg:my-12 bg-white text-black flex items-center justify-center"
+               @click="$emit('openWaitForm')"
+               class="border-2 hover:bg-black hover:text-white border-black w-full px-6 py-3 bg-white text-black flex items-center justify-center"
               >
                 <span>Get started</span>
               </baseButton>
@@ -40,7 +41,7 @@
             
             <!-- NEWBIE PLAN -->
     
-            <div class="w-full sm:w-[23%] p-5 sm:p-3 bg-white space-y-4 flex flex-col items-start justify-start rounded-2xl">
+            <div class="w-full sm:w-[23%] h-fit space-y-4 lg:space-y-0 lg:h-full p-5 sm:p-3 bg-white flex flex-col items-start justify-between rounded-2xl">
               <img
                 
                 src='~/assets/img/tag2.svg'
@@ -60,13 +61,13 @@
 
               <h1 class="text-lg extraboldCabinet"
                 >
-                  10 <span class="text-sm cabinet text-gray-500 paragraph mx-1">resumes /cover letters</span>
+                  10 <span class="text-sm cabinet text-gray-500 paragraph mx-1">resumes /cover letters daily</span>
               </h1>
 
               <div class="flex flex-col space-y-2">
                 <h1 class="text-xl extraboldCabinet "
                   >
-                  4,000 NGN <span class="text-sm  cabinet text-gray-500 paragraph">/ month</span>
+                  4,000 NGN <span class="text-sm  cabinet text-gray-500 paragraph">/ month(save up to 35%)</span>
                 </h1>
 
                 <h1 class="text-xl text-gray-500 line-through extraboldCabinet "
@@ -86,7 +87,7 @@
 
             <!-- MID LEVEL PLAN -->
 
-            <div class="w-full sm:w-[23%] p-5 sm:p-3 bg-white space-y-4 flex flex-col items-start justify-start rounded-2xl">
+            <div class="w-full sm:w-[23%] h-fit space-y-4 lg:space-y-0 lg:h-full p-5 sm:p-3 bg-white flex flex-col items-start justify-between rounded-2xl">
               <img
                 
                 src='~/assets/img/tag3.svg'
@@ -106,13 +107,13 @@
 
               <h1 class="text-lg extraboldCabinet"
                 >
-                  10 <span class="text-sm cabinet text-gray-500 paragraph mx-1">resumes /cover letters</span>
+                  10 <span class="text-sm cabinet text-gray-500 paragraph mx-1">resumes /cover letters daily</span>
               </h1>
 
               <div class="flex flex-col space-y-2">
                 <h1 class="text-xl extraboldCabinet "
                   >
-                  7,000 NGN <span class="text-sm  cabinet text-gray-500 paragraph">/ month</span>
+                  7,000 NGN <span class="text-sm  cabinet text-gray-500 paragraph">/ month(save up to 45%)</span>
                 </h1>
 
                 <h1 class="text-xl text-gray-500 line-through extraboldCabinet "
@@ -152,13 +153,13 @@
 
               <h1 class="text-lg extraboldCabinet"
                 >
-                  10 <span class="text-sm cabinet text-gray-500 paragraph mx-1">resumes /cover letters</span>
+                  10 <span class="text-sm cabinet text-gray-500 paragraph mx-1">resumes /cover letters daily</span>
               </h1>
 
               <div class="flex flex-col space-y-2">
                 <h1 class="text-xl extraboldCabinet "
                   >
-                  15,000 NGN <span class="text-sm  cabinet text-gray-500 paragraph">/ quarter</span>
+                  15,000 NGN <span class="text-sm  cabinet text-gray-500 paragraph">/ quarter(save up to 50%)</span>
                 </h1>
 
                 <h1 class="text-xl text-gray-500 line-through extraboldCabinet "

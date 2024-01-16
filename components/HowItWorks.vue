@@ -1,5 +1,5 @@
 <template>
-        <section class="w-full howToSection">
+        <section class="col-span-12 howToSection">
           <div class="w-full flex flex-col items-center justify-center lg:px-4 lg:px-16 py-16 space-y-16">
             <div data-aos="fade-left" class="w-full flex flex-col items-center justify-center space-y-4">
               <h1
@@ -11,7 +11,7 @@
               How It Works
               </h1>
               <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-sm text-center cabinet text-gray-500 paragraph">
-                Craft Tailored CVs & Cover Letters, Analyze Your Resume's Impact..
+                Craft Tailored CVs & Cover Letters, Analyze Your Resume's Impact.
               </p>
             </div>
 
@@ -58,7 +58,7 @@
                     data-aos-delay="500"
                     class="text-lg px-4 sm:px-0 text-center text-black extraboldCabinet lg:text-xl"
                 >
-                Copy and paste desired job roles
+                Copy and paste the job description
                 </h1>
 
                 <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class=" text-xs lg:text-sm cabinet text-center text-gray-500 paragraph">
@@ -79,7 +79,7 @@
                     data-aos-delay="500"
                     class="text-lg px-4 sm:px-0 text-center text-black extraboldCabinet lg:text-xl"
                 >
-                  AI analysis and application generation
+                Get an optimized resume and cover letter.
                 </h1>
 
                 <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-xs lg:text-sm cabinet text-center text-gray-500 paragraph">
@@ -107,7 +107,7 @@
                     data-aos-delay="500"
                     class="text-lg px-4 sm:px-0 text-center text-black extraboldCabinet lg:text-xl"
                 >
-                Review, save and send
+                Download and land your dream job
                 </h1>
 
                 <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-xs lg:text-sm cabinet text-center text-gray-500 paragraph">
