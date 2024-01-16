@@ -6,14 +6,18 @@
       
       <BaseSection>
         <div class="col-span-12 flex flex-col sm:flex-row items-center justify-center mt-6 px-4 space-x-3 mb-20 sm:px-0">
-          <div v-for="resource in resources" :key="resource.name" class="w-full sm:w-[23%] p-5 sm:py-5 sm:px-3 bg-white flex flex-col items-center justify-center rounded-2xl">
+          <div v-for="resource in resources" :key="resource.name" class="w-full h-fit lg:h-full sm:w-[23%] p-5 sm:py-5 sm:px-3 bg-white flex flex-col items-center rounded-2xl">
+
+            <div class="w-full sm:h-[50%] sm:w-[80%] flex flex-row items-center justify-center">
               <img
                 
                 :src=resource.image
-                class="w-full sm:w-[80%]"
+                class="w-full"
                 alt=""
               />
 
+            </div>
+              
               <div class="w-full flex items-start justify-start mb-4">
                 <baseButton
                 class="border hover:bg-black hover:text-white mt-3 border-black w-[40] px-3 py-1 bg-white text-xs text-black flex items-center justify-center"

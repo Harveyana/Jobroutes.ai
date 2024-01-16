@@ -36,7 +36,7 @@
             <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-xs lg:text-sm cabinet text-black paragraph">
               Craft unique job application documents customized to every job description you are interested in. Our system takes relevant information from your existing Resume and the Job description to create optimized Resumes and Cover Letters that fit your target role.
             </p>
-            <span class="flex text-xs lg:text-sm flex-row space-y-4 items-center hover:text-gray-500 justify-center">
+            <span @click="$emit('openWaitForm')" class="flex cursor-pointer text-xs lg:text-sm flex-row space-y-4 items-center hover:text-gray-500 justify-center">
               Try it out 
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01"/></svg>
             </span>
@@ -69,7 +69,7 @@
             <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-xs lg:text-sm cabinet text-black paragraph">
               Our analyzer dissects your resume, uncovering strengths and areas for improvement. Gain valuable insights and enhance your chances of success with every submission.
             </p>
-            <span class="flex flex-row text-xs lg:text-sm space-y-4 items-center hover:text-gray-500 justify-center">
+            <span @click="$emit('openWaitForm')" class="flex flex-row cursor-pointer text-xs lg:text-sm space-y-4 items-center hover:text-gray-500 justify-center">
               Join other better users 
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01"/></svg>
             </span>
@@ -102,7 +102,7 @@
             <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-xs lg:text-sm cabinet text-black paragraph">
               Access tailored resources aligned with your ambitions, ensuring targeted support for advancing your career
             </p>
-            <span class="flex flex-row text-xs lg:text-sm space-y-4 items-center hover:text-gray-500 justify-center">
+            <span @click="$emit('openWaitForm')" class="flex flex-row text-xs cursor-pointer lg:text-sm space-y-4 items-center hover:text-gray-500 justify-center">
               Explore jobs 
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01"/></svg>
             </span>

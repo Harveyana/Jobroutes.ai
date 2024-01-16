@@ -94,7 +94,7 @@
             </p>
           </div>
 
-          <Features />
+          <Features @openWaitForm="openDialog()"/>
 
         </div>
       </BaseSection>
@@ -102,7 +102,7 @@
     </section>
 
     <!-- How It Works -->
-    <section class="w-full ">
+    <section id="howItWorks" class="w-full">
       <BaseSection>
         <HowItWorks />
       </BaseSection>
@@ -111,11 +111,11 @@
 
 
     <!-- Get hired without borders -->
-    <section id="hero" class="w-full">
+    <section id="final" class="w-full">
       <BaseSection class="bg-white">
         <div class="col-span-12 bg-[#fefbd1] m-4 sm:m-10 flex flex-col items-center justify-center rounded-xl">
 
-          <div class="w-full sm:w-3/4 lg:w-3/5 items-center justify-center py-36 space-y-4 px-6 text-center">
+          <div class="w-full sm:w-3/4 lg:w-3/5 items-center justify-center py-16 space-y-4 px-6 text-center">
             
             <h1
               data-aos="fade-right"
@@ -142,8 +142,18 @@
                 <span>Get started for free</span>
               </baseButton>
             </div>
+            
           </div>
-          
+          <div class="w-full sm:px-16">
+                <img
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos-delay="500"
+                  src='~/assets/img/worldrange.svg'
+                  class="w-full"
+                  alt=""
+                />
+          </div>
         
         </div>
 
@@ -156,7 +166,7 @@
 
     
     <!-- FAQS -->
-    <section class="w-full">
+    <section id="Faq" class="w-full">
       <BaseSection class="bg-white">
         <div class="col-span-12 items-center justify-center space-y-6 px-4 sm:px-16 text-center pt-10 pb-20">
           

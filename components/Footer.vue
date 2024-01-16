@@ -4,10 +4,10 @@
         <!-- Logo -->
         <div class="flex flex-col w-fit mr-auto space-y-8">
               <a href="#">
-                <img src='~/assets/img/logo/jobroutesWhite.svg' class="w-12" alt="jobroute Logo" />
+                <img src='~/assets/img/logo/jobroutesWhite.svg' class="w-36 sm:w-48" alt="jobroute Logo" />
               </a>
               <span class="text-gray-500 cabinet text-xs sm:text-sm">
-                JobRoutes is powered by Entryplan
+                JobRoutes is powered by Entryplan Limited
               </span>
         </div>
 
@@ -19,9 +19,9 @@
           </h1>
 
           <ul class="space-y-2">
-              <FooterLink name="About us" url="#" />
-              <FooterLink name="Features" url="#" />
-              <FooterLink name="Pricing" url="#" />
+              <FooterLink name="About us" url="/#howItWorks" />
+              <FooterLink name="Features" url="/#Talents" />
+              <FooterLink name="Pricing" url="/pricing" />
             </ul>
         </div>
 
@@ -34,8 +34,8 @@
 
           <ul class="space-y-2">
               <FooterLink name="Blog" url="#" />
-              <FooterLink name="Help center" url="#" />
-              <FooterLink name="Contact Us" url="#" />
+              <FooterLink name="Help center" url="/#Faq" />
+              <FooterLink name="Contact Us" url="mailto:info@myjobroutes.com" />
             </ul>
         </div>
 
@@ -61,10 +61,10 @@
           </h1>
 
           <ul class="space-y-2">
-              <FooterLink name="Instagram" url="#" />
-              <FooterLink name="X (Popularly known as Twitter)" url="#" />
-              <FooterLink name="LinkdIn" url="#" />
-              <FooterLink name="Facebook" url="#" />
+              <FooterLink name="Instagram" url="https://instagram.com/myjobroutes" />
+              <FooterLink name="X (Formally Twitter)" url="https://twitter.com/myjobroutes" />
+              <FooterLink name="LinkedIn" url="https://linkedin.com/myjobroutes" />
+              <!-- <FooterLink name="Facebook" url="#" /> -->
             </ul>
         </div>
         
@@ -75,7 +75,7 @@
           Jobroutes is powered by EntryPlan
         </span> -->
         <span class="text-white cabinet text-xs sm:text-sm">
-          © 2024 Jobroutes
+          © 2024 JobRoutes
         </span>
       </div>
     </footer>

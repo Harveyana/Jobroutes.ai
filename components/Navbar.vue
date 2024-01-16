@@ -1,11 +1,11 @@
 <template>
-    <nav id="navbar" class="fixed top-0 left-0 right-0  backdrop-blur-lg z-10 w-full text-neutral-800">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 backdrop-blur-lg z-10 w-full text-neutral-800">
       <div class="flex flex-col max-w-screen-xl px-4 sm:px-16 mx-auto lg:items-center lg:justify-between lg:flex-row">
         <div class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
           <div class="w-full flex flex-row items-center justify-between py-6">
             <div>
               <NuxtLink to="/">
-                <img src='~/assets/img/logo/jobroute.svg' class="w-18 " alt="jobroute Logo" />
+                <img src='~/assets/img/logo/jobroute.svg' class="w-36 sm:w-48" alt="jobroute Logo" />
               </NuxtLink>
             </div>
             <button class="border border-black rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
