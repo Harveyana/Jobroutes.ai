@@ -7,13 +7,14 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     head: {
-      title: "Jobroute",
+      title: "Vyre Africa",
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'Tailored Applications for Dream Roles', name: 'crafting bespoke CVs and cover letters optimized for your dream job', content: 'No more generic applications! Our cutting-edge AI analyzes your uploaded resume and job description, crafting bespoke CVs and cover letters optimized for your dream job' }
+        { name: 'description', content: 'crypto x fiat - instant, trustless, and borderless' },
+
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/jobroute.svg' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/vyreLogo.png' }],
     },
   },
   primevue: {
@@ -22,7 +23,7 @@ export default defineNuxtConfig({
     cssLayerOrder: 'tailwind-base, primevue, tailwind-utilities',
     components: {
       // include: '*',
-      include: ['InputText', 'Button', 'Dialog','Toast','ProgressSpinner','Ripple'],
+      include: ['Dialog','Toast','Ripple'],
     },
     directives: {
       include: '*'

@@ -23,7 +23,7 @@
 
               <h1 class="text-lg extraboldCabinet"
                 >
-                  10 <span class="text-sm cabinet text-gray-500 paragraph mx-1">resumes /cover letters daily</span>
+                <span class="text-sm cabinet text-gray-500 paragraph mx-1">Unique resumes/cover letters daily</span>
               </h1>
 
               <div class="flex flex-col space-y-2">
@@ -71,7 +71,7 @@
 
               <h1 class="text-lg extraboldCabinet"
                 >
-                  5 <span class="text-sm cabinet text-gray-500 paragraph mx-1">resumes /cover letters daily</span>
+                <span class="text-sm cabinet text-gray-500 paragraph mx-1">Unique resumes/cover letters daily</span>
               </h1>
 
               <div class="flex flex-col space-y-2">
@@ -118,13 +118,13 @@
 
               <h1 class="text-lg extraboldCabinet"
                 >
-                  5 <span class="text-sm cabinet text-gray-500 paragraph mx-1">resumes /cover letters daily</span>
+                <span class="text-sm cabinet text-gray-500 paragraph mx-1">Unique resumes/cover letters daily</span>
               </h1>
 
               <div class="flex flex-col space-y-2">
                 <h1 class="text-xl extraboldCabinet "
                   >
-                  4,000 NGN <span class="text-sm  cabinet text-gray-500 paragraph">/ month(save up to 35%)</span>
+                  4,000 NGN <span class="text-sm  cabinet text-gray-500 paragraph">/ week(save up to 35%)</span>
                 </h1>
 
                 <h1 class="text-xl text-gray-500 line-through extraboldCabinet "
@@ -177,7 +177,7 @@
                @click="$emit('openWaitForm')"
                class="border-2 hover:bg-black hover:text-white border-black w-full px-6 py-3 bg-white text-black flex items-center justify-center"
               >
-                <span>Get started</span>
+                <span>Get started for Free</span>
               </baseButton>
 
             </div>

@@ -2,10 +2,14 @@
     <nav id="navbar" class="fixed top-0 left-0 right-0 backdrop-blur-lg z-10 w-full text-neutral-800">
       <div class="flex flex-col max-w-screen-xl px-4 sm:px-16 mx-auto lg:items-center lg:justify-between lg:flex-row">
         <div class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
-          <div class="w-full flex flex-row items-center justify-between py-6">
+          <div class="w-full flex flex-row items-center justify-between py-4">
             <div>
-              <NuxtLink to="/">
-                <img src='~/assets/img/logo/jobroute.svg' class="w-36 sm:w-48" alt="jobroute Logo" />
+              <NuxtLink to="/" class="flex items-center justify-center gap-x-2">
+                <img src='~/assets/img/logo/vyreLogo.png' class="w-10 sm:w-14" alt="Logo" />
+                <h1 class="text-[35px] sm:text-[45px] font-bold extraboldCabinet"
+                >
+                 vyre
+                </h1>
               </NuxtLink>
             </div>
             <button class="border border-black rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
@@ -20,8 +24,8 @@
             class="w-full h-auto flex flex-col lg:flex-row items-center justify-center pb-4 lg:pb-0 lg:justify-end duration-300 space-x-0 sm:space-x-6"
           >
             <!-- <NavLink name="For Talents" url="#Talents" /> -->
-            <NavLink name="Pricing" url="/pricing" />
-            <NavLink name="Resources" url="/resources" />
+            <NavLink name="About" url="#" />
+            <NavLink name="Contact Us" url="#" />
             <!-- <NavLink name="Contact" url="/faqs" /> -->
           </ul>
           <BaseButton @click="$emit('openForm')" class="bg-[#e6e7e7] cabinet whitespace-nowrap py-2 px-6 lg:px-3 font-black text-black border border-[#1D3160]">

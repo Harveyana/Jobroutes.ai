@@ -8,7 +8,7 @@
                 data-aos-delay="500"
                 class="text-2xl text-center text-black extraboldCabinet sm:text-4xl"
               >
-              How It Works
+              Why Vyre
               </h1>
               <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="text-sm text-center cabinet text-gray-500 paragraph">
                 Craft Tailored CVs & Cover Letters, Analyze Your Resume's Impact.
@@ -37,7 +37,7 @@
                     data-aos-delay="500"
                     class="text-lg px-4 sm:px-0 text-center text-black extraboldCabinet lg:text-xl"
                 >
-                Sign up and upload your resume
+                Direct user-to-user
                 </h1>
 
                 <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class=" text-xs lg:text-sm cabinet text-center text-gray-500 paragraph">
